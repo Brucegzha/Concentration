@@ -11,7 +11,7 @@
      var str = document.getElementById("newsdata").innerHTML;
      document.getElementById("newsdata").innerHTML = str +'<p style="line-height:1em;font-size:26px;font-weight:500;-webkit-font-smoothing:antialiased;color:#333;font-family:Open Sans,Arial,sans-serif;padding-bottom:7px;">'+myArr["articles"][i].title+'</p>'+'<p style="font-size:14px;color:#25b5b9;padding-bottom:3px;">'+"Publish: "+myArr["articles"][i].publishedAt.substring(0,10)+'</p>'+'<p style="font-family:Open Sans,Arial,sans-serif;color:#666;font-weight:500;-webkit-font-smoothing:antialiased;line-height:1.7em;font-size:14px;">'+myArr["articles"][i].description+'<a style="color: #2ea3f2;text-decoration:none;" '+'href="'+myArr["articles"][i].url+'">'+"read more"+'</a>'+'</p>'+'<img style="padding-bottom:100px;" src="'+myArr["articles"][i].urlToImage+'"></img>'+'<br>';
      }
-     }sfds
+     }
     };
      xmlhttp.open("GET", "https://newsapi.org/v2/top-headlines?sources=crypto-coins-news&apiKey=7da26e0b9add470aaa4b1f4ed1be8727", true);
      xmlhttp.send();
